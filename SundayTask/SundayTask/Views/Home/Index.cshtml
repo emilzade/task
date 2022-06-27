@@ -1,0 +1,60 @@
+﻿@model SundayTask.ViewModels.HomeVM;
+
+<section>
+    <div class="position-relative">
+        <div style="height:80vh;" class="w-100">
+            <img class="h-100 w-100" src="~/assets/images/sea.jpg" />
+        </div>
+        <div class="position-absolute top-50 start-50 translate-middle">
+            <p class="text-light fs-3 fw-bold">Generate more leads with a professional landing page!</p>
+            <form>
+                <div class="form-group my-2">
+                    <label></label>
+                    <input class="form-control" type="text" placeholder="Login Email" />
+                </div>
+                <input type="submit" class="btn btn-primary btn-lg my-2" />
+            </form>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container m-auto text-center row p-5">
+        @for (int i = 0; i < Model.Features.Count; i++)
+        {
+            <div class="col-md-4 col-12">
+                <i class="fas fa-flag text-primary display-4"></i>
+                <p class="fs-3">@Model.Features[i].Title</p>
+                <p class="fs-4 text-secondary">@Model.Features[i].Body</p>
+            </div>
+        }
+    </div>
+</section>
+<section class="w-100 overflow-hidden py-5">
+    <div class="row">
+        <div class="col-md-6 col-12 d-flex flex-column justify-content-center align-items-center p-0 m-0">
+            <p class="w-75 fs-3 fw-bold">Fully Responsive Design</p>
+            <p class="w-75 text-secondary">When you use a theme created by Start Bootstrap, you know that the theme will look great on any device, whether it's a phone, tablet, or desktop the page will behave responsively!</p>
+        </div>
+        <div class="col-md-6 col-12 p-0 m-0">
+            <img class="w-100" src="~/assets/images/bg-showcase-1.jpg" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-12 p-0 m-0">
+            <img class="w-100" src="~/assets/images/bg-showcase-2.jpg" />
+        </div>
+        <div class="col-md-6 col-12 d-flex flex-column justify-content-center align-items-center p-0 m-0">
+            <p class="w-75 fs-3 fw-bold">Fully Responsive Design</p>
+            <p class="w-75 text-secondary">When you use a theme created by Start Bootstrap, you know that the theme will look great on any device, whether it's a phone, tablet, or desktop the page will behave responsively!</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-12 d-flex flex-column justify-content-center align-items-center p-0 m-0">
+            <p class="w-75 fs-3 fw-bold">Fully Responsive Design</p>
+            <p class="w-75 text-secondary">When you use a theme created by Start Bootstrap, you know that the theme will look great on any device, whether it's a phone, tablet, or desktop the page will behave responsively!</p>
+        </div>
+        <div class="col-md-6 col-12 p-0 m-0">
+            <img class="w-100" src="~/assets/images/bg-showcase-3.jpg" />
+        </div>
+    </div>
+</section>
